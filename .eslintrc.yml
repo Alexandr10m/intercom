@@ -5,7 +5,7 @@ env:
   node: true
   jest: true
 
-extends: ['htmlacademy/es6', 'plugin:react/recommended']
+extends: ['eslint:recommended', 'plugin:react/recommended']
 
 parserOptions:
   ecmaFeatures:

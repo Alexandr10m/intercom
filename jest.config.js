@@ -4,6 +4,9 @@ module.exports = {
     "^.+\\.tsx?$": `ts-jest`,
     "^.+\\.js?$": `babel-jest`,
   },
+  moduleNameMapper: {
+    "^.+\\.(css|less|scss)$": `babel-jest`
+  },
   testRegex: `.test.(js?|jsx?|tsx?)$`,
   moduleFileExtensions: [
     `ts`,

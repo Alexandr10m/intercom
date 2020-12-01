@@ -4,13 +4,12 @@
     "outDir": "./dist",
     "sourceMap": true,
     "module": "commonjs",
-    "target": "es2016",
+    "target": "es2018",
     "jsx": "react",
     "allowSyntheticDefaultImports": false,
     "lib": ["dom"]
   },
   "exclude": [
-    "demos",
     "node_modules",
     "dist"
   ]
