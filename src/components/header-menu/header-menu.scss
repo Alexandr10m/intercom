@@ -1,0 +1,76 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  margin-bottom: 61px;
+}
+
+.nav-bar__menu {
+  display: none;
+}
+
+.nav-bar__logo-link {
+  display: block;
+  width: 58px;
+  line-height: 0px;
+}
+
+.header__phone-link {
+  text-decoration: none;
+  font-family: "ProximaNova-Light", "Aria", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .nav-container {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 1415px) {
+  .nav-container {
+    margin-bottom: 130px;
+    align-items: flex-end;
+  }
+
+  .nav-bar {
+    display: flex;
+  }
+
+  .nav-bar__menu {
+    margin: 0;
+    padding-left: 25px;
+    list-style: none;
+  }
+
+  .menu {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .menu_link {
+    display: block;
+    padding: 7px 24px;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "ProximaNova-Light", sans-serif;
+    text-decoration: none;
+    color: white;
+  }
+
+  .nav-bar__logo-link {
+    width: 93px;
+  }
+
+  .header__phone-link {
+    display: block;
+    padding-bottom: 8px;
+    font-size: 18px;
+    font-family: "ProximaNova-Semibold", "Aria", sans-serif;
+    word-spacing: 1px
+  }
+}
