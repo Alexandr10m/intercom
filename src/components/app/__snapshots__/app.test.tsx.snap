@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot of App AppComponent shoul render h1 1`] = `
+<h1>
+   HI
+</h1>
+`;
