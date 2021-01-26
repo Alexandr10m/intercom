@@ -1,0 +1,269 @@
+.main-header {
+  width: 319px;
+  color: white;
+  background-color: #260568;
+  background-image: url("../../images/firstScreen-background.jpg");
+  background-repeat: no-repeat;
+}
+
+.header__containder {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 14px;
+  padding-bottom: 55px;
+}
+
+.header__arrow {
+  display: none;
+}
+
+.advantages__text-wrapper {
+  margin-bottom: 63px;
+}
+
+.advantages__subject {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.advantages__desc {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.advantages__title {
+  margin-top: 7px;
+  margin-bottom: 0;
+  font-family: "ProximaNova-Bold", "Aria", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #f9b92f;
+  text-transform: uppercase;
+  background: none;
+}
+
+.advantages__subtitle {
+  width: 200px;
+  margin: 0 auto;
+  padding-left: 45px;
+  padding-right: 45px;
+  font-family: "ProximaNova-Semibold", "Aria", sans-serif;
+  font-size: 14px;
+  line-height: 17.33px;
+  text-align: center;
+}
+
+.advantages_modes-basin {
+  display: none;
+}
+
+.header_callback-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 23px;
+}
+
+.callback__text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__excerpt {
+  margin: 0;
+  margin-bottom: 28px;
+  font-size: 14px;
+  line-height: 17.33px;
+  font-family: "ProximaNova-Bold", "Aria", sans-serif;
+  text-align: center;
+}
+
+.header__number-phone {
+  margin-bottom: 10px;
+  padding: 0 20px;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  border: none;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.header__button {
+  padding: 0 20px;
+  padding-top: 14px;
+  padding-bottom: 18px;
+  border: none;
+  font-family: "ProximaNova-Semibold";
+  color: black;
+  font-size: 14px;
+  line-height: 14px;
+  background-color: #f9b92f;
+  cursor: pointer;
+}
+
+// <<<<===================  table  ================================================>>>>>
+@media (min-width: 768px) {
+  .main-header {
+    width: 767px;
+    color: white;
+    background-color: #260568;
+    background-image: url("../../images/firstScreen-background-destop.jpg");
+  }
+}
+// <<<<===================  desktop  ================================================>>>>>
+@media (min-width: 1415px) {
+  .main-header {
+    width: 1415px;
+    color: white;
+    background-color: #260568;
+    background-image: url("../../images/firstScreen-background-destop.jpg");
+  }
+
+  .header__containder {
+    margin: 0 auto;
+    padding-left: 230px;
+    padding-right: 226px;
+    padding-bottom: 201px;
+  }
+
+  .advantages {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__arrow {
+    position: absolute;
+    top: 125px;
+    display: block;
+    width: 13px;
+    height: 33px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url("../../images/icon-arrow.png");
+  }
+
+  .button-arrow--left {
+    left: -64px;
+  }
+
+  .button-arrow--right {
+    right: -64px;
+    background-image: url("../../images/icon-arrow-right.png");
+  }
+
+  .advantages__subject {
+    font-size: 32px;
+    line-height: 26px;
+    text-align: left;
+  }
+
+  .advantages__desc {
+    font-size: 32px;
+    line-height: 42px;
+    text-align: left;
+  }
+
+  .advantages__title {
+    font-size: 32px;
+    line-height: 42px;
+    text-align: left;
+  }
+
+  .advantages__subtitle {
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 18px;
+    line-height: 13px;
+    text-align: left;
+  }
+
+  .advantages_modes-basin {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .modes-basin {
+    font-size: 10px;
+    line-height: 14px;
+    font-family: "ProximaNova-Light", sans-serif;
+    text-align: right;
+    padding-top: 4px;
+  }
+
+  .modes-basin__item {
+    position: relative;
+    margin-bottom: 32px;
+    padding-right: 61px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    cursor: pointer;
+  }
+
+  .modes-basin__item--swimming {
+    background-image: url("../../images/icon-swimming_pool.png");
+  }
+  .modes-basin__item--massages {
+    background-image: url("../../images/icon-gidro_swimming_pool.png");
+    background-position-x: 95%;
+  }
+  .modes-basin__item--sports {
+    background-image: url("../../images/icon-sport_swimming_pool.png");
+    background-position-x: 97%;
+  }
+
+// -----------------------------------------
+  .active_basin-item {
+    font-size: 12px;
+    color: #f9b92f;
+    font-family: "ProximaNova", sans-serif;
+    background-image: url("../../images/icon-swimming_pool-hover.png");
+  }
+// -----------------------------------------
+
+  .modes-basin :last-child {
+    margin-bottom: 0;
+  }
+
+  .header_callback-form {
+    padding: 0;
+  }
+
+  .header__excerpt {
+    margin-bottom: 22px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+  }
+
+  .callback__text-wrap {
+    flex-direction: row;
+  }
+
+  .header__number-phone {
+    margin-bottom: 0;
+    margin-right: 16px;
+    padding-top: 12px;
+    padding-right: 64px;
+    padding-bottom: 14px;
+    padding-left: 19px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .header__button {
+    padding-left: 31px;
+    padding-right: 26px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
