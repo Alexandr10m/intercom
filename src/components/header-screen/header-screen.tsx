@@ -1,44 +1,73 @@
 import * as React from "react";
 import HeaderMenu from "../header-menu/header-menu";
 import "./header-screen.scss";
+import CallbackForm from "../callback-form/callback-form";
+import {BASIN_MODES, ICON_BASIN_MODES} from "../../constants";
+import withPhoneNumber from "../../hoc/with-phone-number/with-phone-number"
 
 
-const HeaderScreen = () => {
+interface Props {
+  currentMode: number,
+  currentBackground: string,
+  activeClassName: string,
+  onArrowNextClick: () => void,
+  onArrowPreviousClick: () => void,
+  onBasinModesClick: (evt: React.MouseEvent) => void,
+}
+
+const SHORT_DESCRIPTION_OF_BASIN = `sports`;
+
+const CallBackForm = withPhoneNumber(CallbackForm);
+
+const HeaderScreen = (props: Props) => {
+  const {
+    currentMode,
+    currentBackground,
+    activeClassName,
+    onArrowNextClick,
+    onArrowPreviousClick,
+    onBasinModesClick,
+  } = props;
+
   return (
-    <header className="main-header">
-      {/* background */}
+    <header className={`main-header ${currentBackground}`}>
       <div className="header__containder">
-        {/* centerman */}
         <HeaderMenu/>
         <section id="advantages" className="advantages">
-          <button className="header__arrow button-arrow button-arrow--left" type="button"></button>
-
+          <button onClick={onArrowPreviousClick} className="header__arrow button-arrow button-arrow--left" type="button"></button>
           <div className="advantages__text-wrapper">
             <p className="advantages__subject">Профессиональное проектирование, </p>
             <h1 className="advantages__title">строительство бетонных бассейнов</h1>
             <p className="advantages__desc"> любых форм и размеров</p>
             <p className="advantages__subtitle">«Под ключ» с гарантией соблюдения сроков</p>
           </div>
-
           <ul className="advantages_modes-basin modes-basin">
-            <li className="modes-basin__item modes-basin__item--swimming active_basin-item">Плавательные бассейны <br/>для частного и коммерческого <br/>использовани</li>
-            <li className="modes-basin__item modes-basin__item--massages">Гидромассажные бассейны <br/>для wellness-зон и частного <br/>использован</li>
-            <li className="modes-basin__item modes-basin__item--sports">Спортивные бассейны <br/>для профессионального <br/>назначения</li>
-          </ul>
+            {BASIN_MODES.map(({type, title, description}, index) => {
+                const isActive = currentMode === index;
+                const isShortDescription = type === SHORT_DESCRIPTION_OF_BASIN;
+                const activeIcon = ICON_BASIN_MODES.find((icon) => icon.type === type);
+                const activeIcontClassName = activeIcon? activeIcon.iconClassName : ``;
 
-          <button className="header__arrow button-arrow button-arrow--right" type="button"></button>
+                return (
+                  <li onClick={onBasinModesClick}
+                      className={`modes-basin__item modes-basin__item--${type} ${isActive ? activeClassName : ``} ${isActive ? activeIcontClassName : ``}`} key={`${type}`}>
+                      <h3 className="modes-basin_title">
+                        {title}
+                      </h3>
+                      <p className={`modes-basin_description ${isShortDescription ? `modes-basin_description--short` : ``}`}>
+                        {description}
+                      </p>
+                  </li>
+                );
+            })
+          }
+          </ul>
+          <button onClick={onArrowNextClick} className="header__arrow button-arrow button-arrow--right" type="button"></button>
         </section>
-        <form id="callback-Form" className="header_callback-form" name="callback" action="#" method="POST" encType="multipart/form-data" autoComplete="on">
-          <p className="header__excerpt">Узнайте стоимость вашего бетонного бассейна</p>
-          <div className="callback__text-wrap">
-            <input id="number-phone" className="header__number-phone" type="text" name="number-phone" value="" placeholder="+38 (093) 333 33 33"></input>
-          <button className="header__button" type="submit">Узнать стоимость</button>
-          </div>
-        </form>
+        <CallBackForm/>
       </div>
     </header>
   );
 };
-
 
 export default HeaderScreen;
