@@ -2,8 +2,8 @@
   width: 319px;
   color: white;
   background-color: #260568;
-  background-image: url("../../images/firstScreen-background.jpg");
   background-repeat: no-repeat;
+  background-image: url("../../images/firstScreen-background.jpg");
 }
 
 .header__containder {
@@ -63,49 +63,6 @@
   display: none;
 }
 
-.header_callback-form {
-  display: flex;
-  flex-direction: column;
-  padding: 0 23px;
-}
-
-.callback__text-wrap {
-  display: flex;
-  flex-direction: column;
-}
-
-.header__excerpt {
-  margin: 0;
-  margin-bottom: 28px;
-  font-size: 14px;
-  line-height: 17.33px;
-  font-family: "ProximaNova-Bold", "Aria", sans-serif;
-  text-align: center;
-}
-
-.header__number-phone {
-  margin-bottom: 10px;
-  padding: 0 20px;
-  padding-top: 14px;
-  padding-bottom: 16px;
-  border: none;
-  font-size: 12px;
-  line-height: 12px;
-}
-
-.header__button {
-  padding: 0 20px;
-  padding-top: 14px;
-  padding-bottom: 18px;
-  border: none;
-  font-family: "ProximaNova-Semibold";
-  color: black;
-  font-size: 14px;
-  line-height: 14px;
-  background-color: #f9b92f;
-  cursor: pointer;
-}
-
 // <<<<===================  table  ================================================>>>>>
 @media (min-width: 768px) {
   .main-header {
@@ -122,6 +79,18 @@
     color: white;
     background-color: #260568;
     background-image: url("../../images/firstScreen-background-destop.jpg");
+  }
+
+  .main-header--swimming {
+    background-image: url("../../images/firstScreen-background-destop.jpg");
+  }
+
+  .main-header--massages {
+    background-image: url("../../images/firstScreen-background2-destop.jpg");
+  }
+
+  .main-header--sports {
+    background-image: url("../../images/firstScreen-background3-destop.jpg");
   }
 
   .header__containder {
@@ -147,6 +116,7 @@
     border: none;
     background-color: transparent;
     background-image: url("../../images/icon-arrow.png");
+    cursor: pointer;
   }
 
   .button-arrow--left {
@@ -187,6 +157,7 @@
 
   .advantages_modes-basin {
     display: block;
+    width: 240px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -209,8 +180,22 @@
     cursor: pointer;
   }
 
+  .modes-basin_title {
+    margin: 0;
+    font-weight: normal;
+  }
+
+  .modes-basin_description {
+    margin: 0;
+  }
+
+  .modes-basin_description--short {
+    padding-left: 20px;
+  }
+
   .modes-basin__item--swimming {
     background-image: url("../../images/icon-swimming_pool.png");
+    background-position-x: 97%;
   }
   .modes-basin__item--massages {
     background-image: url("../../images/icon-gidro_swimming_pool.png");
@@ -221,49 +206,26 @@
     background-position-x: 97%;
   }
 
-// -----------------------------------------
+  .active-modes-basin__item--swimming {
+    background-image: url("../../images/icon-swimming_pool-hover.png");
+    background-position-x: 103%;
+  }
+  .active-modes-basin__item--massages {
+    background-image: url("../../images/icon-gidro_pool-hover.png");
+    background-position-x: 99%;
+  }
+  .active-modes-basin__item--sports {
+    background-image: url("../../images/icon-sports_pool-hover.png");
+    background-position-x: 103%;
+  }
+
   .active_basin-item {
     font-size: 12px;
     color: #f9b92f;
     font-family: "ProximaNova", sans-serif;
-    background-image: url("../../images/icon-swimming_pool-hover.png");
   }
-// -----------------------------------------
 
   .modes-basin :last-child {
     margin-bottom: 0;
-  }
-
-  .header_callback-form {
-    padding: 0;
-  }
-
-  .header__excerpt {
-    margin-bottom: 22px;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: left;
-  }
-
-  .callback__text-wrap {
-    flex-direction: row;
-  }
-
-  .header__number-phone {
-    margin-bottom: 0;
-    margin-right: 16px;
-    padding-top: 12px;
-    padding-right: 64px;
-    padding-bottom: 14px;
-    padding-left: 19px;
-    font-size: 12px;
-    line-height: 12px;
-  }
-
-  .header__button {
-    padding-left: 31px;
-    padding-right: 26px;
-    font-size: 14px;
-    line-height: 14px;
   }
 }
