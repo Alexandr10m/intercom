@@ -6,6 +6,12 @@
   background-image: url("../../images/firstScreen-background.jpg");
 }
 
+@media (min-resolution: 144dpi) {
+  .main-header {
+    background-image: url("../../images/firstScreen-background.jpg");
+  }
+}
+
 .header__containder {
   margin: 0 auto;
   padding-left: 15px;
@@ -93,6 +99,24 @@
     background-image: url("../../images/firstScreen-background3-destop.jpg");
   }
 
+  @media (min-resolution: 144dpi) {
+    .main-header {
+      background-image: url("../../images/firstScreen-background-destop.jpg");
+    }
+
+    .main-header--swimming {
+      background-image: url("../../images/firstScreen-background-destop.jpg");
+    }
+
+    .main-header--massages {
+      background-image: url("../../images/firstScreen-background2-destop.jpg");
+    }
+
+    .main-header--sports {
+      background-image: url("../../images/firstScreen-background3-destop.jpg");
+    }
+  }
+
   .header__containder {
     margin: 0 auto;
     padding-left: 230px;
@@ -118,6 +142,11 @@
     background-image: url("../../images/icon-arrow.png");
     cursor: pointer;
   }
+  @media (min-resolution: 144dpi) {
+    .header__arrow {
+      background-image: url("../../images/icon-arrow.png");
+    }
+  }
 
   .button-arrow--left {
     left: -64px;
@@ -126,6 +155,12 @@
   .button-arrow--right {
     right: -64px;
     background-image: url("../../images/icon-arrow-right.png");
+  }
+
+  @media (min-resolution: 144dpi) {
+    .header__arrow {
+      background-image: url("../../images/icon-arrow.png");
+    }
   }
 
   .advantages__subject {
@@ -217,6 +252,27 @@
   .active-modes-basin__item--sports {
     background-image: url("../../images/icon-sports_pool-hover.png");
     background-position-x: 103%;
+  }
+
+  @media (min-resolution: 144dpi) {
+    .modes-basin__item--swimming {
+      background-image: url("../../images/icon-swimming_pool.png");
+    }
+    .modes-basin__item--massages {
+      background-image: url("../../images/icon-gidro_swimming_pool.png");
+    }
+    .modes-basin__item--sports {
+      background-image: url("../../images/icon-sport_swimming_pool.png");
+    }
+    .active-modes-basin__item--swimming {
+      background-image: url("../../images/icon-swimming_pool-hover.png");
+    }
+    .active-modes-basin__item--massages {
+      background-image: url("../../images/icon-gidro_pool-hover.png");
+    }
+    .active-modes-basin__item--sports {
+      background-image: url("../../images/icon-sports_pool-hover.png");
+    }
   }
 
   .active_basin-item {
