@@ -9,7 +9,8 @@ class HeaderMenu extends React.PureComponent {
       <div className="nav-container">
         <nav className="nav-bar">
           <a className="nav-bar__logo-link">
-            <img src="..\..\images\logo.png" alt="логотип"/>
+            <img src="..\..\images\logo.png"
+              srcSet="..\..\images\logo.png 2x, ..\..\images\logo.png 3x" alt="логотип"/>
           </a>
           <ul className="menu nav-bar__menu">
             <li className="menu__item"><a className="menu_link" href="#profile">Работы</a></li>
