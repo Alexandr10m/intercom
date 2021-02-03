@@ -1,0 +1,202 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderScreen Snapshots should render correct 1`] = `
+<header
+  className="main-header bg"
+>
+  <div
+    className="header__containder"
+  >
+    <div
+      className="nav-container"
+    >
+      <nav
+        className="nav-bar"
+      >
+        <a
+          className="nav-bar__logo-link"
+        >
+          <img
+            alt="логотип"
+            src="..\\\\..\\\\images\\\\logo.png"
+          />
+        </a>
+        <ul
+          className="menu nav-bar__menu"
+        >
+          <li
+            className="menu__item"
+          >
+            <a
+              className="menu_link"
+              href="#profile"
+            >
+              Работы
+            </a>
+          </li>
+          <li
+            className="menu__item"
+          >
+            <a
+              className="menu_link"
+              href="#services"
+            >
+              Услуги
+            </a>
+          </li>
+          <li
+            className="menu__item"
+          >
+            <a
+              className="menu_link"
+              href="#advantages"
+            >
+              Преимущества
+            </a>
+          </li>
+          <li
+            className="menu__item"
+          >
+            <a
+              className="menu_link"
+              href="#team"
+            >
+              Команда
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a
+        className="header__phone-link"
+        href="tel:+380676297972"
+      >
+        + 380 (67) 629 79 72
+      </a>
+    </div>
+    <section
+      className="advantages"
+      id="advantages"
+    >
+      <button
+        className="header__arrow button-arrow button-arrow--left"
+        onClick={[Function]}
+        type="button"
+      />
+      <div
+        className="advantages__text-wrapper"
+      >
+        <p
+          className="advantages__subject"
+        >
+          Профессиональное проектирование, 
+        </p>
+        <h1
+          className="advantages__title"
+        >
+          строительство бетонных бассейнов
+        </h1>
+        <p
+          className="advantages__desc"
+        >
+           любых форм и размеров
+        </p>
+        <p
+          className="advantages__subtitle"
+        >
+          «Под ключ» с гарантией соблюдения сроков
+        </p>
+      </div>
+      <ul
+        className="advantages_modes-basin modes-basin"
+      >
+        <li
+          className="modes-basin__item modes-basin__item--swimming active active-modes-basin__item--swimming"
+          onClick={[Function]}
+        >
+          <h3
+            className="modes-basin_title"
+          >
+            Плавательные бассейны
+          </h3>
+          <p
+            className="modes-basin_description "
+          >
+            для частного и коммерческого использовани
+          </p>
+        </li>
+        <li
+          className="modes-basin__item modes-basin__item--massages  "
+          onClick={[Function]}
+        >
+          <h3
+            className="modes-basin_title"
+          >
+            Гидромассажные бассейны
+          </h3>
+          <p
+            className="modes-basin_description "
+          >
+            для wellness-зон и частного использован
+          </p>
+        </li>
+        <li
+          className="modes-basin__item modes-basin__item--sports  "
+          onClick={[Function]}
+        >
+          <h3
+            className="modes-basin_title"
+          >
+            Спортивные бассейны
+          </h3>
+          <p
+            className="modes-basin_description modes-basin_description--short"
+          >
+            для профессионального назначения
+          </p>
+        </li>
+      </ul>
+      <button
+        className="header__arrow button-arrow button-arrow--right"
+        onClick={[Function]}
+        type="button"
+      />
+    </section>
+    <form
+      action="#"
+      autoComplete="on"
+      className="header_callback-form"
+      encType="multipart/form-data"
+      id="callback-Form"
+      method="POST"
+      name="callback"
+    >
+      <p
+        className="header__excerpt"
+      >
+        Узнайте стоимость вашего бетонного бассейна
+      </p>
+      <div
+        className="callback__text-wrap"
+      >
+        <input
+          className="header__number-phone"
+          id="number-phone"
+          name="number-phone"
+          onChange={[Function]}
+          placeholder="+38 (093) 333 33 33"
+          type="text"
+          value=""
+        />
+        <button
+          className="header__button"
+          disabled={true}
+          onClick={[Function]}
+          type="submit"
+        >
+          Узнать стоимость
+        </button>
+      </div>
+    </form>
+  </div>
+</header>
+`;
